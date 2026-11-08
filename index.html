@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ветеринарная клиника полного цикла — круглосуточный приём | Демо</title>
+<meta name="description" content="Круглосуточная ветеринарная клиника: 12 специализаций, собственная лаборатория, открытый прайс. Работаем с 2008 года. Запись без регистрации. Демо-сайт.">
+<meta property="og:title" content="Ветеринарная клиника полного цикла — демо">
+<meta property="og:description" content="Круглосуточный приём, 12 специализаций, собственная лаборатория. Демо-сайт по ТЗ.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232A8A7D'/%3E%3Cpath d='M16 7v18M7 16h18' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VeterinaryCare",
+  "name": "Ветеринарная клиника [ЗАПОЛНИТЬ: название]",
+  "telephone": "+7 (495) 000-00-00",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Примерная, 15",
+    "addressLocality": "[ЗАПОЛНИТЬ: город]",
+    "addressCountry": "RU"
+  },
+  "openingHours": "Mo-Su 00:00-24:00",
+  "priceRange": "от 900 ₽"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Что делать, если питомец отравился?", "acceptedAnswer": {"@type": "Answer", "text": "Немедленно позвоните по экстренной линии. Не вызывайте рвоту самостоятельно."}},
+    {"@type": "Question", "name": "Можно ли прийти без записи?", "acceptedAnswer": {"@type": "Answer", "text": "Да, но рекомендуем записаться — так вы не будете ждать."}},
+    {"@type": "Question", "name": "Как подготовить питомца к УЗИ?", "acceptedAnswer": {"@type": "Answer", "text": "Не кормить 8–12 часов. Вода — без ограничений."}},
+    {"@type": "Question", "name": "Работаете ли вы с птицами и рептилиями?", "acceptedAnswer": {"@type": "Answer", "text": "Да, у нас есть специалист по экзотическим питомцам."}},
+    {"@type": "Question", "name": "Есть ли рассрочка на лечение?", "acceptedAnswer": {"@type": "Answer", "text": "Да, для лечения от 20 000 ₽. Уточните условия у администратора."}}
+  ]
+}
+</script>
+<style>
+:root {
+  --color-primary-600: #1F6E64;
+  --color-primary-500: #2A8A7D;
+  --color-primary-400: #4BA89B;
+  --color-primary-300: #7FC4BA;
+  --color-primary-200: #B5DDD6;
+  --color-primary-100: #E3F2EF;
+  --color-accent-600: #C75B2A;
+  --color-accent-500: #E07A3F;
+  --color-accent-100: #FCE9DB;
+  --color-neutral-900: #1A1D1C;
+  --color-neutral-700: #4A504E;
+  --color-neutral-500: #8E9492;
+  --color-neutral-400: #B8BDBC;
+  --color-neutral-300: #D6DAD9;
+  --color-neutral-200: #E8EBEA;
+  --color-neutral-100: #F4F6F5;
+  --color-neutral-50: #FAFBFB;
+  --color-success: #2E7D4F;
+  --color-warning: #D99A2B;
+  --color-error: #C4433A;
+  --color-emergency: #8B2635;
+  --font-family: 'Golos Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius-sm: 8px; --radius-md: 12px; --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.08);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-family);
+  font-size: 16px; line-height: 1.5;
+  color: var(--color-neutral-900);
+  background: var(--color-neutral-50);
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 80px; }
+.container-narrow { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+section { padding: 80px 0; }
+h1, h2, h3 { letter-spacing: -0.015em; }
+h2 { font-size: 32px; font-weight: 600; line-height: 1.25; }
+h2.center, .center { text-align: center; }
+.subtitle { font-size: 18px; color: var(--color-neutral-700); margin-top: 16px; }
+a { color: var(--color-primary-500); }
+img { max-width: 100%; display: block; height: auto; }
+:focus-visible { outline: 3px solid var(--color-primary-300); outline-offset: 2px; border-radius: 4px; }
+.skip-link { position: absolute; left: -9999px; top: 0; background: #fff; padding: 12px 20px; z-index: 200; }
+.skip-link:focus { left: 8px; top: 8px; }
+
+/* Кнопки */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+  border: none; border-radius: var(--radius-md); transition: background 150ms, border-color 150ms;
+}
+.btn-lg { height: 56px; padding: 0 32px; font-size: 16px; border-radius: 12px; }
+.btn-md { height: 48px; padding: 0 24px; font-size: 15px; border-radius: 10px; }
+.btn-sm { height: 40px; padding: 0 20px; font-size: 14px; font-weight: 500; border-radius: 8px; }
+.btn-primary { background: var(--color-accent-500); color: #fff; }
+.btn-primary:hover { background: var(--color-accent-600); }
+.btn-primary:active { background: #B24E22; }
+.btn-secondary { background: transparent; border: 2px solid var(--color-primary-500); color: var(--color-primary-500); }
+.btn-secondary:hover { background: var(--color-primary-100); color: var(--color-primary-600); border-color: var(--color-primary-500); }
+.btn-outline-white { background: transparent; border: 2px solid rgba(255,255,255,0.9); color: #fff; }
+.btn-outline-white:hover { background: rgba(255,255,255,0.12); }
+.btn-tertiary { background: transparent; color: var(--color-primary-500); font-weight: 500; padding: 0; height: auto; }
+.btn-tertiary:hover { text-decoration: underline; color: var(--color-primary-600); }
+
+/* Блок 1. Sticky-полоса */
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--color-primary-100); border-bottom: 1px solid var(--color-primary-200);
+  height: 40px; display: flex; align-items: center;
+}
+.topbar-inner { display: flex; align-items: center; gap: 24px; width: 100%; font-size: 13px; font-weight: 500; color: var(--color-primary-600); }
+.status { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--color-success); flex-shrink: 0; }
+.status-dot.pulse { animation: pulse 2s infinite; }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(46,125,79,0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(46,125,79,0); }
+  100% { box-shadow: 0 0 0 0 rgba(46,125,79,0); }
+}
+.topbar a { color: var(--color-primary-600); text-decoration: none; }
+.topbar a:hover { color: var(--color-accent-600); }
+.topbar-record { margin-left: auto; font-weight: 600; color: var(--color-accent-600); }
+@media (prefers-reduced-motion: reduce) { .status-dot.pulse { animation: none; } html { scroll-behavior: auto; } }
+
+/* Блок 2. Header */
+.header {
+  background: #fff; border-bottom: 1px solid var(--color-neutral-200);
+  height: 80px; display: flex; align-items: center; position: sticky; top: 40px; z-index: 99;
+}
+.header-inner { display: flex; align-items: center; gap: 32px; width: 100%; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--color-neutral-900); font-weight: 700; font-size: 18px; }
+.logo-mark { width: 32px; height: 32px; border-radius: 8px; background: var(--color-primary-500); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.nav { display: flex; gap: 32px; list-style: none; }
+.nav a { text-decoration: none; color: var(--color-neutral-900); font-size: 15px; font-weight: 500; }
+.nav a:hover { color: var(--color-primary-500); }
+.has-mega { position: relative; }
+.mega {
+  display: none; position: absolute; top: 100%; left: -32px; padding-top: 16px;
+}
+.has-mega:hover .mega, .has-mega:focus-within .mega { display: block; }
+.mega-card {
+  background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
+  padding: 32px; display: grid; grid-template-columns: repeat(4, max-content); gap: 24px 48px; list-style: none;
+}
+.mega-card li { margin-bottom: 8px; white-space: nowrap; }
+.mega-card .mega-title { font-weight: 600; font-size: 14px; color: var(--color-neutral-900); margin-bottom: 12px; }
+.mega-card a { text-decoration: none; font-size: 14px; color: var(--color-neutral-700); }
+.mega-card a:hover { color: var(--color-primary-500); }
+.header-actions { margin-left: auto; display: flex; align-items: center; gap: 20px; }
+.header-phone { font-size: 16px; font-weight: 600; color: var(--color-neutral-900); text-decoration: none; }
+.header-phone:hover { color: var(--color-primary-500); }
+
+/* Блок 3. Hero */
+.hero { background: var(--color-neutral-50); padding: 80px 0; }
+.hero-grid { display: grid; grid-template-columns: 55fr 45fr; gap: 48px; align-items: center; }
+.hero h1 { font-size: 48px; font-weight: 700; line-height: 1.15; }
+.hero-sub { font-size: 18px; color: var(--color-neutral-700); line-height: 1.6; margin-top: 24px; }
+.hero-ctas { display: flex; gap: 16px; margin-top: 40px; flex-wrap: wrap; }
+.hero-checks { margin-top: 32px; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.hero-checks li { font-size: 14px; color: var(--color-neutral-700); display: flex; align-items: center; gap: 10px; }
+.hero-media { position: relative; }
+.hero-media img { border-radius: var(--radius-lg); width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+.hero-plate {
+  position: absolute; left: 16px; bottom: 16px; background: rgba(255,255,255,0.95);
+  border-radius: 8px; padding: 8px 14px; font-size: 12px; color: var(--color-neutral-700);
+}
+
+/* Блок 4. Экстренный */
+.emergency { background: var(--color-emergency); color: #fff; padding: 48px 0; }
+.emergency-inner { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+.emergency h2 { color: #fff; display: flex; align-items: center; gap: 12px; }
+.emergency-sub { font-size: 18px; color: rgba(255,255,255,0.9); margin-top: 12px; }
+.emergency-phone { font-size: 24px; font-weight: 700; color: #fff; text-decoration: none; white-space: nowrap; }
+.emergency-phone:hover { text-decoration: underline; }
+.emergency-ctas { display: flex; gap: 16px; margin-left: auto; flex-wrap: wrap; }
+
+/* Блок 5. Услуги */
+.services { background: #fff; }
+.cards-8 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+.svc-card {
+  background: #fff; border: 1px solid var(--color-neutral-200); border-radius: var(--radius-lg);
+  padding: 24px; transition: border-color 150ms, box-shadow 150ms;
+}
+.svc-card:hover { border-color: var(--color-primary-300); box-shadow: var(--shadow-md); }
+.svc-icon { width: 32px; height: 32px; color: var(--color-primary-500); margin-bottom: 16px; }
+.svc-card h3 { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+.svc-card p { font-size: 14px; color: var(--color-neutral-700); }
+.section-cta { text-align: center; margin-top: 40px; }
+
+/* Блок 6. Почему мы */
+.why { background: var(--color-neutral-100); }
+.why h2 { text-align: center; }
+.why .subtitle { text-align: center; }
+.num-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 48px; }
+.num-card {
+  background: #fff; border: 1px solid var(--color-neutral-200); border-radius: var(--radius-lg);
+  padding: 32px; text-align: center; transition: border-color 150ms;
+}
+.num-card:hover { border-color: var(--color-primary-200); }
+.num { font-size: 40px; font-weight: 700; color: var(--color-primary-500); line-height: 1.1; }
+.num-card p { font-size: 16px; color: var(--color-neutral-700); margin-top: 8px; }
+.why-divider { border: none; border-top: 1px solid var(--color-neutral-200); margin: 48px 0; }
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.pillar {
+  background: #fff; border: 1px solid var(--color-neutral-200); border-radius: var(--radius-lg);
+  padding: 24px; display: flex; gap: 16px; align-items: flex-start;
+}
+.pillar-icon {
+  width: 48px; height: 48px; border-radius: 50%; background: var(--color-primary-100);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--color-primary-500);
+}
+.pillar h3 { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+.pillar p { font-size: 15px; color: var(--color-neutral-700); }
+.why-ctas { display: flex; gap: 16px; justify-content: center; margin-top: 48px; flex-wrap: wrap; }
+
+/* Блок 7. Врачи */
+.doctors { background: #fff; }
+.doctors-head { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
+.doc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+.doc-card { background: #fff; border: 1px solid var(--color-neutral-200); border-radius: var(--radius-lg); padding: 24px; }
+.doc-card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: var(--radius-md); }
+.doc-card h3 { font-size: 20px; font-weight: 600; margin-top: 16px; }
+.doc-spec { font-size: 14px; color: var(--color-neutral-700); margin-top: 4px; }
+.doc-exp { font-size: 14px; color: var(--color-neutral-500); margin-top: 2px; }
+.doc-card .btn { margin-top: 16px; width: 100%; }
+
+/* Блок 8. Цены */
+.prices { background: var(--color-neutral-100); }
+.prices h2 { text-align: center; }
+.price-list { margin-top: 48px; }
+.price-row {
+  display: flex; align-items: baseline; gap: 12px; padding: 16px 0;
+  border-bottom: 1px solid var(--color-neutral-200);
+}
+.price-row:first-child { border-top: 1px solid var(--color-neutral-200); }
+.price-name { font-size: 16px; color: var(--color-neutral-900); }
+.price-dots { flex: 1; border-bottom: 2px dotted var(--color-neutral-400); transform: translateY(-4px); min-width: 24px; }
+.price-val { font-size: 20px; font-weight: 600; white-space: nowrap; }
+.why-diff {
+  background: #fff; border: 1px solid var(--color-neutral-200); border-radius: var(--radius-md);
+  padding: 20px 24px; margin-top: 40px;
+}
+.why-diff h3 { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+.why-diff ul { list-style: none; }
+.why-diff li { font-size: 14px; color: var(--color-neutral-700); padding-left: 16px; position: relative; margin-bottom: 8px; }
+.why-diff li::before { content: "·"; position: absolute; left: 0; color: var(--color-neutral-500); }
+.price-promise { text-align: center; font-size: 14px; font-weight: 500; color: var(--color-primary-500); margin-top: 32px; }
+.offer-note { text-align: center; font-size: 12px; color: var(--color-neutral-500); margin-top: 16px; }
+
+/* Блок 9. Отзывы */
+.reviews { background: #fff; }
+.reviews-head { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.rating { font-size: 16px; font-weight: 500; color: var(--color-neutral-700); }
+.rating .star { color: var(--color-accent-500); }
+.rev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.rev-card {
+  background: #fff; border: 1px solid var(--color-neutral-200); border-radius: var(--radius-lg);
+  padding: 24px; min-height: 220px; display: flex; flex-direction: column;
+}
+.rev-stars { color: var(--color-accent-500); letter-spacing: 2px; }
+.rev-text { font-size: 16px; line-height: 1.6; margin-top: 12px; flex: 1; }
+.rev-author { font-size: 14px; font-weight: 500; color: var(--color-neutral-700); margin-top: 16px; }
+.rev-src { font-size: 14px; color: var(--color-neutral-500); margin-top: 4px; }
+
+/* Блок 10. Филиалы */
+.branches { background: var(--color-neutral-100); }
+.branch-grid { display: grid; grid-template-columns: 60fr 40fr; gap: 32px; margin-top: 48px; }
+.map-placeholder {
+  background: #fff; border: 1px solid var(--color-neutral-200); border-radius: var(--radius-lg);
+  min-height: 480px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px; color: var(--color-neutral-500); text-align: center; padding: 24px;
+}
+.map-placeholder strong { color: var(--color-neutral-700); font-size: 18px; }
+.branch-list { display: flex; flex-direction: column; gap: 16px; }
+.branch-card { background: #fff; border: 1px solid var(--color-neutral-200); border-radius: var(--radius-lg); padding: 24px; }
+.branch-card h3 { font-size: 20px; font-weight: 600; }
+.branch-card p { font-size: 15px; color: var(--color-neutral-700); margin-top: 6px; }
+.branch-card .branch-ctas { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+
+/* Блок 11. FAQ */
+.faq { background: #fff; }
+.faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 12px; }
+.faq details { border: 1px solid var(--color-neutral-200); border-radius: var(--radius-md); background: #fff; }
+.faq summary {
+  list-style: none; cursor: pointer; padding: 20px 24px; font-size: 18px; font-weight: 600;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--color-primary-500); font-size: 24px; font-weight: 400; flex-shrink: 0; }
+.faq details[open] summary::after { content: "−"; }
+.faq .faq-a { padding: 0 24px 20px; color: var(--color-neutral-700); }
+.faq details[open] { border-color: var(--color-primary-300); }
+
+/* Блок 12. Форма */
+.booking { background: var(--color-primary-100); }
+.booking h2 { text-align: center; }
+.booking .subtitle { text-align: center; }
+.form-note { text-align: center; font-size: 13px; color: var(--color-neutral-700); margin-top: 16px; }
+.form-card { margin-top: 40px; }
+.field { margin-bottom: 20px; }
+.field label { display: block; font-size: 14px; font-weight: 500; color: var(--color-neutral-700); margin-bottom: 6px; }
+.field input {
+  width: 100%; height: 48px; border: 1px solid var(--color-neutral-300); border-radius: 10px;
+  padding: 0 16px; font-family: inherit; font-size: 16px; color: var(--color-neutral-900); background: #fff;
+}
+.field input:focus { outline: none; border: 2px solid var(--color-primary-500); }
+.field input[aria-invalid="true"] { border-color: var(--color-error); }
+.field-error { display: none; font-size: 14px; color: var(--color-error); margin-top: 6px; }
+.field input[aria-invalid="true"] + .field-error { display: block; }
+.form-card .btn { width: 100%; }
+.form-alt { text-align: center; margin-top: 20px; font-size: 15px; color: var(--color-neutral-700); }
+.form-agree { text-align: center; font-size: 13px; color: var(--color-neutral-500); margin-top: 16px; }
+.form-success {
+  display: none; background: #fff; border-radius: var(--radius-lg); padding: 32px; text-align: center;
+}
+.form-success h3 { font-size: 24px; margin-bottom: 12px; }
+.form-success p { color: var(--color-neutral-700); margin-bottom: 8px; }
+.form-success .ok { color: var(--color-success); font-weight: 600; }
+
+/* Блок «Что делать до приезда» */
+.help { background: #fff; }
+.help-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 48px; }
+.help-card { border: 1px solid var(--color-neutral-200); border-radius: var(--radius-lg); padding: 20px; }
+.help-card h3 { font-size: 18px; margin-bottom: 8px; }
+.help-card p { font-size: 14px; color: var(--color-neutral-700); }
+.help-extra { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; }
+.help-box { border: 1px solid var(--color-neutral-200); border-radius: var(--radius-lg); padding: 24px; }
+.help-box h3 { font-size: 18px; margin-bottom: 12px; }
+.help-box ul { list-style: none; }
+.help-box li { font-size: 15px; color: var(--color-neutral-700); padding-left: 18px; position: relative; margin-bottom: 8px; }
+.help-box li::before { content: "·"; position: absolute; left: 0; color: var(--color-primary-500); font-weight: 700; }
+.help-box.dont li::before { color: var(--color-error); }
+
+/* Блок 13. Подвал */
+.footer { background: var(--color-neutral-900); color: #fff; padding: 64px 0 32px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
+.footer h4 { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; }
+.footer p, .footer a { font-size: 14px; color: rgba(255,255,255,0.7); text-decoration: none; }
+.footer a:hover { color: #fff; }
+.footer ul { list-style: none; }
+.footer li { margin-bottom: 10px; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.15); margin-top: 48px; padding-top: 24px;
+  font-size: 13px; color: rgba(255,255,255,0.5); display: flex; gap: 16px; flex-wrap: wrap;
+}
+
+/* Демо-плашка */
+.demo-banner {
+  background: var(--color-accent-100); color: var(--color-accent-600);
+  text-align: center; font-size: 13px; padding: 6px 16px;
+}
+
+/* ===== Мобильная адаптация ===== */
+@media (max-width: 1279px) {
+  .container { padding: 0 40px; }
+  .cards-8 { grid-template-columns: repeat(2, 1fr); }
+  .doc-grid { grid-template-columns: repeat(2, 1fr); }
+  .help-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .container { padding: 0 16px; }
+  section { padding: 48px 0; }
+  h2 { font-size: 24px; }
+  .topbar-inner { gap: 12px; overflow-x: auto; }
+  .topbar-address { display: none; }
+  .header { height: 64px; top: 40px; }
+  .nav { display: none; }
+  .header-phone { display: none; }
+  .hero { padding: 48px 0; }
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-media { order: -1; }
+  .hero h1 { font-size: 32px; }
+  .hero-ctas .btn { width: 100%; }
+  .emergency-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
+  .emergency-ctas { margin-left: 0; width: 100%; }
+  .emergency-ctas .btn { flex: 1; }
+  .num-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .num { font-size: 36px; }
+  .num-card { padding: 20px; }
+  .pillars { grid-template-columns: 1fr; }
+  .doc-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 16px; padding-bottom: 8px; }
+  .doc-card { min-width: 280px; scroll-snap-align: start; }
+  .price-row { flex-wrap: wrap; }
+  .price-dots { display: none; }
+  .price-val { width: 100%; }
+  .rev-grid { grid-template-columns: 1fr; }
+  .branch-grid { grid-template-columns: 1fr; }
+  .map-placeholder { min-height: 240px; }
+  .help-grid { grid-template-columns: 1fr; }
+  .help-extra { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .why-ctas .btn { width: 100%; }
+  .cards-8 { gap: 16px; }
+  .svc-card { padding: 16px; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<div class="demo-banner">Демо-сайт: контент и фото — иллюстративные, форма не отправляет данные</div>
+
+<!-- Блок 1. Sticky-полоса -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span class="status"><span class="status-dot pulse" aria-hidden="true"></span>Сейчас открыто · Круглосуточно</span>
+    <span class="topbar-address">ул. Примерная, 15</span>
+    <a href="tel:+74950000000">+7 495 000-00-00</a>
+    <a class="topbar-record" href="#zapis">Записаться</a>
+  </div>
+</div>
+
+<!-- Блок 2. Header -->
+<header class="header">
+  <div class="container header-inner">
+    <a class="logo" href="#">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg>
+      </span>
+      Ветклиника&nbsp;«Пример»
+    </a>
+    <nav aria-label="Основная навигация">
+      <ul class="nav">
+        <li class="has-mega">
+          <a href="#uslugi" aria-haspopup="true">Услуги ▾</a>
+          <div class="mega">
+            <ul class="mega-card">
+              <li><div class="mega-title">Терапия</div>
+                <ul style="list-style:none">
+                  <li><a href="#uslugi">Вакцинация</a></li>
+                  <li><a href="#uslugi">Осмотр</a></li>
+                  <li><a href="#uslugi">Диспансеризация</a></li>
+                </ul>
+              </li>
+              <li><div class="mega-title">Специализация</div>
+                <ul style="list-style:none">
+                  <li><a href="#uslugi">Кардиология</a></li>
+                  <li><a href="#uslugi">Офтальмология</a></li>
+                  <li><a href="#uslugi">Онкология</a></li>
+                </ul>
+              </li>
+              <li><div class="mega-title">Диагностика</div>
+                <ul style="list-style:none">
+                  <li><a href="#uslugi">УЗИ</a></li>
+                  <li><a href="#uslugi">Рентген</a></li>
+                  <li><a href="#uslugi">Анализы</a></li>
+                </ul>
+              </li>
+              <li><div class="mega-title">Процедуры</div>
+                <ul style="list-style:none">
+                  <li><a href="#uslugi">Стерилизация</a></li>
+                  <li><a href="#uslugi">Стоматология</a></li>
+                  <li><a href="#pomosch">Экстренно: круглосуточный приём</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#vrachi">Врачи</a></li>
+        <li><a href="#ceny">Цены</a></li>
+        <li><a href="#filialy">Филиалы</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+74950000000">+7 495 000-00-00</a>
+      <a class="btn btn-secondary btn-md" href="#zapis">Записаться</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- Блок 3. Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Ветеринарная клиника полного цикла</h1>
+      <p class="hero-sub">Круглосуточный приём, 12 специализаций, собственная лаборатория</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary btn-lg" href="#zapis">Записаться на приём</a>
+        <a class="btn btn-secondary btn-lg" href="tel:+74950000000">Позвонить: +7 495 000-00-00</a>
+      </div>
+      <ul class="hero-checks">
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#2A8A7D"/><path d="M4.5 8.5l2.2 2.2 4.6-4.8" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Работаем с 2008 года</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#2A8A7D"/><path d="M4.5 8.5l2.2 2.2 4.6-4.8" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>45 000+ приёмов в год</li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <img src="img/hero.jpg" alt="Врач в бирюзовом костюме осматривает собаку породы мальтезе стетоскопом" width="1920" height="1080" fetchpriority="high">
+      <span class="hero-plate">Иллюстративное фото — заменить на реальные кадры клиники</span>
+    </div>
+  </div>
+</section>
+
+<!-- Блок 4. Экстренная помощь -->
+<section class="emergency" id="pomosch" aria-label="Экстренная помощь">
+  <div class="container emergency-inner">
+    <div>
+      <h2>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3L2.5 20h19L12 3z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v4.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1.1" fill="#fff"/></svg>
+        Питомцу плохо?
+      </h2>
+      <p class="emergency-sub">Круглосуточный экстренный приём<br>Травмы · Отравления · Судороги · Кровотечения</p>
+    </div>
+    <a class="emergency-phone" href="tel:+74950000000">+7 (495) 000-00-00</a>
+    <div class="emergency-ctas">
+      <a class="btn btn-outline-white btn-md" href="#filialy">Как добраться</a>
+      <a class="btn btn-outline-white btn-md" href="#do-priezda">Что делать до приезда</a>
+    </div>
+  </div>
+</section>
+
+<!-- Блок 5. Услуги -->
+<section class="services" id="uslugi">
+  <div class="container">
+    <h2 class="center">Услуги</h2>
+    <div class="cards-8">
+      <a class="svc-card" href="#zapis" style="text-decoration:none;color:inherit">
+        <svg class="svc-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M6 4v9a6 6 0 0012 0V4M6 4h4m8 0h-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 19v4a5 5 0 0010 0v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="17" r="3" stroke="currentColor" stroke-width="2"/></svg>
+        <h3>Терапия</h3><p>Осмотр, диагностика, лечение</p>
+      </a>
+      <a class="svc-card" href="#zapis" style="text-decoration:none;color:inherit">
+        <svg class="svc-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M14 6h4M16 4v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 18c-5 0-8 2.5-8 6 0 2 1.6 3.5 3.5 3.5 1.7 0 3-.9 4.5-.9s2.8.9 4.5.9c1.9 0 3.5-1.5 3.5-3.5 0-3.5-3-6-8-6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <h3>Вакцинация</h3><p>Защита от бешенства, чумы, энтерита</p>
+      </a>
+      <a class="svc-card" href="#zapis" style="text-decoration:none;color:inherit">
+        <svg class="svc-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="13" cy="13" r="8" stroke="currentColor" stroke-width="2"/><path d="M19 19l7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9.5 13a3.5 3.5 0 013.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h3>Диагностика</h3><p>УЗИ, рентген, анализы</p>
+      </a>
+      <a class="svc-card" href="#zapis" style="text-decoration:none;color:inherit">
+        <svg class="svc-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M12 8c0-2 1.5-4 4-4s4 2 4 4c0 3-2 4-2 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 15c2 0 4 1 4 3.5S20 22 17 22h-2c-2.5 0-4-1-4-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 22l-1 4m5-4v4m5-4l1 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h3>Стоматология</h3><p>Чистка, удаление зубного камня</p>
+      </a>
+      <a class="svc-card" href="#zapis" style="text-decoration:none;color:inherit">
+        <svg class="svc-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 16h4l2.5-5 4 10 3-7 2 2H28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Кардиология</h3><p>ЭхоКГ, ЭКГ, наблюдение</p>
+      </a>
+      <a class="svc-card" href="#zapis" style="text-decoration:none;color:inherit">
+        <svg class="svc-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M2 16s5-7 14-7 14 7 14 7-5 7-14 7S2 16 2 16z" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="2"/></svg>
+        <h3>Офтальмология</h3><p>Диагностика и лечение глаз</p>
+      </a>
+      <a class="svc-card" href="#zapis" style="text-decoration:none;color:inherit">
+        <svg class="svc-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 4v6M16 10c-4 1-7 4-7 9 0 4 3 8 7 9 4-1 7-5 7-9 0-5-3-8-7-9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 17c1-1.5 2.5-2 4-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h3>Экзотические питомцы</h3><p>Птицы, рептилии, грызуны</p>
+      </a>
+      <a class="svc-card" href="#zapis" style="text-decoration:none;color:inherit">
+        <svg class="svc-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 12a3 3 0 013-3h16a3 3 0 013 3v10a3 3 0 01-3 3H8a3 3 0 01-3-3V12z" stroke="currentColor" stroke-width="2"/><path d="M11 9V7a3 3 0 016 0v2" stroke="currentColor" stroke-width="2"/><path d="M13 15v4m4-4v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h3>Стационар</h3><p>Круглосуточное наблюдение</p>
+      </a>
+    </div>
+    <div class="section-cta"><a class="btn btn-tertiary btn-md" href="#ceny">Все услуги и цены →</a></div>
+  </div>
+</section>
+
+<!-- Блок 6. Почему мы -->
+<section class="why" id="pochemu">
+  <div class="container">
+    <h2>Почему нам доверяют</h2>
+    <p class="subtitle">Цифры, которые можно проверить</p>
+    <div class="num-grid">
+      <div class="num-card"><div class="num">17 лет</div><p>работы</p></div>
+      <div class="num-card"><div class="num">45 000+</div><p>приёмов в год</p></div>
+      <div class="num-card"><div class="num">4.9 ★</div><p>Яндекс Карты</p></div>
+      <div class="num-card"><div class="num">Своя</div><p>лаборатория</p></div>
+      <div class="num-card"><div class="num">20+</div><p>специалистов</p></div>
+      <div class="num-card"><div class="num">24/7</div><p>приём</p></div>
+    </div>
+    <hr class="why-divider">
+    <div class="pillars">
+      <div class="pillar">
+        <span class="pillar-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <div><h3>Оборудование</h3><p>Своя лаборатория, УЗИ, рентген, ЭхоКГ. Результаты анализов — в день обращения.</p></div>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="16.5" cy="9.5" r="2.5" stroke="currentColor" stroke-width="2"/><path d="M2.5 20c.7-3.5 3-5.5 5.5-5.5S12.8 16.5 13.5 20m3-4.7c2.3.2 4.2 1.9 4.8 4.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <div><h3>Команда</h3><p>Терапевты, хирурги, кардиологи, офтальмологи, стоматологи, врачи по экзотам. Стаж — от 8 лет.</p></div>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 3v6c0 4.5-3.2 7.7-8 9-4.8-1.3-8-4.5-8-9V6l8-3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-4.8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div><h3>Прозрачность</h3><p>Открытый прайс, все цены на сайте. Никаких доплат после операции.</p></div>
+      </div>
+    </div>
+    <div class="why-ctas">
+      <a class="btn btn-primary btn-lg" href="#zapis">Записаться на приём</a>
+      <a class="btn btn-secondary btn-lg" href="#licenzii">Посмотреть лицензии</a>
+    </div>
+  </div>
+</section>
+
+<!-- Блок 7. Врачи -->
+<section class="doctors" id="vrachi">
+  <div class="container">
+    <div class="doctors-head">
+      <h2>Врачи</h2>
+      <a class="btn btn-tertiary btn-md" href="#vrachi">Вся команда →</a>
+    </div>
+    <div class="doc-grid">
+      <div class="doc-card">
+        <img src="img/doctor-1.jpg" alt="Врач слушает стетоскопом рыжего кота на смотровом столе" loading="lazy" width="1000" height="1000">
+        <h3>Иванова Анна Сергеевна</h3>
+        <p class="doc-spec">Терапевт</p>
+        <p class="doc-exp">Стаж 12 лет</p>
+        <a class="btn btn-secondary btn-sm" href="#zapis">Профиль</a>
+      </div>
+      <div class="doc-card">
+        <img src="img/doctor-2.jpg" alt="Врач держит на смотровом столе белую собаку породы мальтезе" loading="lazy" width="1000" height="1000">
+        <h3>Петрова Мария Андреевна</h3>
+        <p class="doc-spec">Кардиолог</p>
+        <p class="doc-exp">Стаж 9 лет</p>
+        <a class="btn btn-secondary btn-sm" href="#zapis">Профиль</a>
+      </div>
+      <div class="doc-card">
+        <img src="img/doctor-3.jpg" alt="Врач-стоматолог проводит процедуру собаке в кабинете клиники" loading="lazy" width="1000" height="1000">
+        <h3>Смирнов Дмитрий Олегович</h3>
+        <p class="doc-spec">Ветеринарный стоматолог, хирург</p>
+        <p class="doc-exp">Стаж 14 лет</p>
+        <a class="btn btn-secondary btn-sm" href="#zapis">Профиль</a>
+      </div>
+      <div class="doc-card">
+        <img src="img/doctor-4.jpg" alt="Процедурная медсестра делает инъекцию полосатому коту" loading="lazy" width="1000" height="1000">
+        <h3>Козлова Екатерина Викторовна</h3>
+        <p class="doc-spec">Процедурная медсестра</p>
+        <p class="doc-exp">Стаж 6 лет</p>
+        <a class="btn btn-secondary btn-sm" href="#zapis">Профиль</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Блок 8. Цены -->
+<section class="prices" id="ceny">
+  <div class="container-narrow">
+    <h2 class="center">Цены</h2>
+    <p class="subtitle center">Понятно, за что платите</p>
+    <div class="price-list">
+      <div class="price-row"><span class="price-name">Первичный приём терапевта</span><span class="price-dots" aria-hidden="true"></span><span class="price-val">1 500 ₽</span></div>
+      <div class="price-row"><span class="price-name">Вакцинация (комплекс)</span><span class="price-dots" aria-hidden="true"></span><span class="price-val">2 500 ₽</span></div>
+      <div class="price-row"><span class="price-name">УЗИ брюшной полости</span><span class="price-dots" aria-hidden="true"></span><span class="price-val">1 800 ₽</span></div>
+      <div class="price-row"><span class="price-name">Общий анализ крови</span><span class="price-dots" aria-hidden="true"></span><span class="price-val">900 ₽</span></div>
+      <div class="price-row"><span class="price-name">Стерилизация кошки</span><span class="price-dots" aria-hidden="true"></span><span class="price-val">8 000 ₽</span></div>
+    </div>
+    <div class="why-diff">
+      <h3>Почему цена может отличаться</h3>
+      <ul>
+        <li>Вес питомца — наркоз и дозировка зависят от массы</li>
+        <li>Сложность случая — одно дело осмотр, другое — операция</li>
+        <li>Дополнительные исследования — УЗИ, анализы, рентген</li>
+      </ul>
+    </div>
+    <div class="section-cta"><a class="btn btn-tertiary btn-md" href="#ceny">Полный прайс-лист →</a></div>
+    <p class="price-promise">⚠ Все цены окончательные. Никаких доплат после согласования плана лечения.</p>
+    <p class="offer-note">Цены в демо — примеры. Не является публичной офертой.</p>
+  </div>
+</section>
+
+<!-- Блок 9. Отзывы -->
+<section class="reviews" id="otzyvy">
+  <div class="container">
+    <div class="reviews-head">
+      <h2>Отзывы</h2>
+      <span class="rating"><span class="star" aria-hidden="true">★</span> 4.9 — <a href="https://yandex.ru/maps/" target="_blank" rel="noopener">на Яндекс Картах</a></span>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <span class="rev-stars" aria-label="5 из 5">★★★★★</span>
+        <p class="rev-text">«Привезли кота ночью — не мог сходить в туалет, орал, живот раздут. Позвонила, сказали приезжать сразу. Приняли за 10 минут, поставили катетер, врач объяснил, что это было и почему случилось. Утром позвонили узнать, как он. Кот жив, я выдохнула.»</p>
+        <p class="rev-author">— Елена М.</p>
+        <p class="rev-src">Яндекс Карты · пример из ТЗ</p>
+      </div>
+      <div class="rev-card">
+        <span class="rev-stars" aria-label="5 из 5">★★★★★</span>
+        <p class="rev-text">«Первый раз пришли с котёнком на прививку. Врач не просто уколол — расспросил, чем кормим, как спит, показал, как обрабатывать от блох. Объяснил, что будет после прививки и когда паниковать не надо. Для меня, как для новичка, это было важно.»</p>
+        <p class="rev-author">— Мария К.</p>
+        <p class="rev-src">Яндекс Карты · пример из ТЗ</p>
+      </div>
+      <div class="rev-card">
+        <span class="rev-stars" aria-label="5 из 5">★★★★★</span>
+        <p class="rev-text">«Обзвонила пять клиник — нигде не принимают волнистых попугаев. Здесь взяли. Врач осмотрел, сказал, что у Гоши не инфекция, а проблема в кормлении. Поменяли корм — через неделю перестал хрипеть. Спасибо, что не отмахнулись.»</p>
+        <p class="rev-author">— Екатерина С.</p>
+        <p class="rev-src">Яндекс Карты · пример из ТЗ</p>
+      </div>
+    </div>
+    <div class="section-cta"><a class="btn btn-tertiary btn-md" href="https://yandex.ru/maps/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах →</a></div>
+  </div>
+</section>
+
+<!-- Блок 10. Филиалы -->
+<section class="branches" id="filialy">
+  <div class="container">
+    <h2>Филиалы</h2>
+    <div class="branch-grid">
+      <div class="map-placeholder" role="img" aria-label="Место для интерактивной карты">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 10-14 0c0 4.9 7 11 7 11z" stroke="#8E9492" stroke-width="1.6"/><circle cx="12" cy="10" r="2.6" stroke="#8E9492" stroke-width="1.6"/></svg>
+        <strong>Здесь будет интерактивная карта</strong>
+        <span>Яндекс Карты или 2ГИС — подключается при публикации</span>
+      </div>
+      <div class="branch-list">
+        <div class="branch-card">
+          <h3>Центральный</h3>
+          <p>ул. Примерная, 15</p>
+          <p><a href="tel:+74950000000">+7 495 000-00-00</a></p>
+          <p>Круглосуточно</p>
+          <div class="branch-ctas">
+            <a class="btn btn-primary btn-sm" href="#zapis">Записаться</a>
+            <a class="btn btn-secondary btn-sm" href="https://yandex.ru/maps/" target="_blank" rel="noopener">Маршрут</a>
+          </div>
+        </div>
+        <div class="branch-card">
+          <h3>Северный</h3>
+          <p>ул. Вторая, 42</p>
+          <p><a href="tel:+74951111111">+7 495 111-11-11</a></p>
+          <p>08:00–22:00</p>
+          <div class="branch-ctas">
+            <a class="btn btn-primary btn-sm" href="#zapis">Записаться</a>
+            <a class="btn btn-secondary btn-sm" href="https://yandex.ru/maps/" target="_blank" rel="noopener">Маршрут</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Блок «Что делать до приезда» -->
+<section class="help" id="do-priezda">
+  <div class="container">
+    <h2 class="center">Что делать до приезда</h2>
+    <p class="subtitle center">Спокойно. Мы работаем круглосуточно — позвоните: <a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
+    <div class="help-grid">
+      <div class="help-card"><h3>Отравление</h3><p>Не вызывайте рвоту самостоятельно. Звоните сразу — скажем, что делать.</p></div>
+      <div class="help-card"><h3>Травма, удар</h3><p>Ограничьте движение питомца. Не давайте обезболивающие для людей.</p></div>
+      <div class="help-card"><h3>Судороги</h3><p>Не трогайте язык, уберите предметы вокруг, засеките время приступа.</p></div>
+      <div class="help-card"><h3>Кровотечение</h3><p>Надавите чистой тканью на рану. Жгут — только в крайнем случае.</p></div>
+      <div class="help-card"><h3>Проблемы с дыханием</h3><p>Откройте окна, не давайте воду при затруднённом дыхании.</p></div>
+      <div class="help-card"><h3>Тепловой удар</h3><p>Перенесите в прохладу, приложите прохладные (не ледяные) компрессы.</p></div>
+      <div class="help-card"><h3>Проглотил предмет</h3><p>Не пытайтесь извлечь силой, ничего не давайте есть.</p></div>
+      <div class="help-card"><h3>Не уверены?</h3><p>Позвоните — врач подскажет, ехать ли сразу или можно наблюдать дома.</p></div>
+    </div>
+    <div class="help-extra">
+      <div class="help-box dont">
+        <h3>Чего не делать до приезда</h3>
+        <ul>
+          <li>Не давать лекарства «на всякий случай»</li>
+          <li>Не кормить и не поить при остром состоянии</li>
+          <li>Не вызывать рвоту без указания врача</li>
+          <li>Не мыть и не обрабатывать раны антисептиками из аптечки человека</li>
+        </ul>
+      </div>
+      <div class="help-box">
+        <h3>Что взять с собой</h3>
+        <ul>
+          <li>Паспорт вакцинации</li>
+          <li>Медицинскую карточку питомца</li>
+          <li>Лекарства, которые питомец принимает</li>
+          <li>Любимую игрушку или одеяло — для спокойствия</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Блок 11. FAQ -->
+<section class="faq" id="faq">
+  <div class="container-narrow">
+    <h2 class="center">Частые вопросы</h2>
+    <div class="faq-list">
+      <details>
+        <summary>Что делать, если питомец отравился?</summary>
+        <p class="faq-a">Немедленно позвоните по экстренной линии. Не вызывайте рвоту самостоятельно.</p>
+      </details>
+      <details>
+        <summary>Можно ли прийти без записи?</summary>
+        <p class="faq-a">Да, но рекомендуем записаться — так вы не будете ждать.</p>
+      </details>
+      <details>
+        <summary>Как подготовить питомца к УЗИ?</summary>
+        <p class="faq-a">Не кормить 8–12 часов. Вода — без ограничений.</p>
+      </details>
+      <details>
+        <summary>Работаете ли вы с птицами и рептилиями?</summary>
+        <p class="faq-a">Да, у нас есть специалист по экзотическим питомцам.</p>
+      </details>
+      <details>
+        <summary>Есть ли рассрочка на лечение?</summary>
+        <p class="faq-a">Да, для лечения от 20 000 ₽. Уточните условия у администратора.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Блок 12. Форма записи -->
+<section class="booking" id="zapis">
+  <div class="container-narrow">
+    <h2>Записаться на приём</h2>
+    <p class="subtitle">Оставьте контакты — перезвоним в течение 5 минут</p>
+    <p class="form-note">Демо-режим: заявка никуда не отправляется и не сохраняется.</p>
+    <div class="form-card">
+      <form id="booking-form" novalidate>
+        <div class="field">
+          <label for="f-name">Как вас зовут?</label>
+          <input type="text" id="f-name" name="name" autocomplete="name" required>
+          <p class="field-error">Введите имя</p>
+        </div>
+        <div class="field">
+          <label for="f-phone">Телефон</label>
+          <input type="tel" id="f-phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required>
+          <p class="field-error">Проверьте номер телефона</p>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Записаться</button>
+        <p class="form-agree">Нажимая кнопку, вы соглашаетесь с <a href="#privacy">политикой обработки данных</a></p>
+        <p class="form-alt">Или позвоните: <a href="tel:+74950000000">+7 495 000-00-00</a></p>
+      </form>
+      <div class="form-success" id="form-success" role="status">
+        <h3><span class="ok">✓</span> Заявка принята (демо)</h3>
+        <p>Администратор перезвонит на ваш номер в течение 5 минут.</p>
+        <p>На боевом сайте здесь будет подтверждение по SMS и кнопки «Добавить в календарь» и «Сохранить контакт».</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Блок 13. Подвал -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="#" style="color:#fff">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg>
+          </span>
+          Ветклиника&nbsp;«Пример»
+        </a>
+        <p style="margin-top:16px">Многопрофильная ветеринарная клиника. Круглосуточный приём, собственная лаборатория, 12 специализаций.</p>
+      </div>
+      <div>
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="#uslugi">Терапия</a></li>
+          <li><a href="#uslugi">Вакцинация</a></li>
+          <li><a href="#uslugi">Диагностика</a></li>
+          <li><a href="#uslugi">Стоматология</a></li>
+          <li><a href="#uslugi">Стационар</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>О клинике</h4>
+        <ul>
+          <li><a href="#vrachi">Врачи</a></li>
+          <li><a href="#ceny">Цены</a></li>
+          <li><a href="#filialy">Филиалы</a></li>
+          <li><a href="#licenzii" id="licenzii">Лицензии</a></li>
+          <li><a href="#privacy" id="privacy">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+74950000000">+7 495 000-00-00</a></li>
+          <li><a href="mailto:info@vetclinic.ru">info@vetclinic.ru</a></li>
+          <li><p>ул. Примерная, 15<br>ул. Вторая, 42</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>ИНН [ЗАПОЛНИТЬ]</span>
+      <span>Лицензия [ЗАПОЛНИТЬ]</span>
+      <span>© 2026 Ветклиника «Пример» — демо-сайт</span>
+      <span>Фото: N. Stojkovic, Veterinarian Pet Alliance, Anja / Wikimedia Commons (CC BY, CC BY-SA), U.S. Army (public domain)</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Маска телефона +7 (___) ___-__-__
+  var phone = document.getElementById('f-phone');
+  function mask(v) {
+    var d = v.replace(/\D/g, '');
+    if (d.charAt(0) === '8') d = '7' + d.slice(1);
+    if (d.charAt(0) !== '7') d = '7' + d;
+    d = d.slice(0, 11);
+    var out = '+7';
+    if (d.length > 1) out += ' (' + d.slice(1, 4);
+    if (d.length >= 4) out += ') ' + d.slice(4, 7);
+    if (d.length >= 7) out += '-' + d.slice(7, 9);
+    if (d.length >= 9) out += '-' + d.slice(9, 11);
+    return out;
+  }
+  phone.addEventListener('focus', function () {
+    if (!phone.value) phone.value = '+7 (';
+  });
+  phone.addEventListener('input', function () {
+    var start = phone.selectionStart;
+    phone.value = mask(phone.value);
+    phone.setSelectionRange(phone.value.length, phone.value.length);
+    phone.setAttribute('aria-invalid', 'false');
+  });
+
+  var form = document.getElementById('booking-form');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('f-name');
+    var digits = phone.value.replace(/\D/g, '');
+    var ok = true;
+    if (!name.value.trim()) { name.setAttribute('aria-invalid', 'true'); ok = false; }
+    else name.setAttribute('aria-invalid', 'false');
+    if (digits.length !== 11) { phone.setAttribute('aria-invalid', 'true'); ok = false; }
+    if (!ok) return;
+    // Демо: данные никуда не отправляются и не сохраняются
+    form.style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  });
+})();
+</script>
+</body>
+</html>
